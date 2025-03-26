@@ -50,23 +50,21 @@ public class ReniecConsuladosBusquedaSteps {
     @Then("realiza la busqueda")
     public void realiza_la_busqueda() {
         actor.attemptsTo(RealizarBusquedaConsulado.ClickRealizarBusquedaConsulado());
-        System.out.println("Edinson 0006");
+
     }
     @Then("debería ver un mensaje con el texto {string}")
     public void debería_ver_un_mensaje_con_el_texto(String string) {
 
-        System.out.println("Texto Recibido 01 : " + string);
-
         actor.attemptsTo(CambiarAlIframeResultado.ahora());
-
         actor.should(
                 seeThat(MensajeResultadoBusqueda.es(), equalTo(string))
         );
-        System.out.println("Edinson 0007");
     }
-    @Then("regresa a la pestaña original")
-    public void regresa_a_la_pestaña_original() {
-        System.out.println("Edinson 0008");
+    @Then("regresa a la pestana original")
+    public void regresa_a_la_pestana_original() {
+
+        actor.attemptsTo(VolverAPestanaOriginal.ahora());
+
     }
 
 }

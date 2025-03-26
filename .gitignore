@@ -1,4 +1,3 @@
-target/
 build
 out
 .gradle
@@ -14,7 +13,6 @@ buildNumber.properties
 *.iml
 .DS_Store
 .settings/
-/target/
 /.idea/
 /*.iml
 *.log

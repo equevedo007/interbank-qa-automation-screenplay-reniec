@@ -12,4 +12,4 @@ Feature: Navegacion y busqueda de consulados en el portal de RENIEC
     And escribe "Cuenca" en el campo de búsqueda de oficina consular
     And realiza la busqueda
     Then debería ver un mensaje con el texto "Cuenca"
-    And regresa a la pestaña original
+    Then regresa a la pestana original
